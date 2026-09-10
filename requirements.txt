@@ -1,0 +1,8 @@
+pandas>=2.0
+numpy>=1.24
+statsmodels>=0.14
+jupyter>=1.0
+matplotlib>=3.8
+pyfixest>=0.18
+linearmodels>=6.0
+openpyxl>=3.1

@@ -1,0 +1,37 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+venv/
+
+# Données générées (chapitre-1 par chapitre-1-generate-data.py, chapitre-2
+# panels par chapitre-2-generate-data.py) et snapshots intermédiaires.
+# On exclut "<dir>/*" (le contenu) plutôt que "<dir>/" (le dossier) partout
+# ci-dessous : un dossier exclu comme un tout n'est jamais parcouru par git,
+# ce qui empêcherait toute règle de ré-inclusion de s'appliquer à son contenu.
+data/*
+!data/chapitre-1/
+data/chapitre-1/*
+!data/chapitre-2/
+data/chapitre-2/*
+!data/chapitre-2/data_rio/
+data/chapitre-2/data_rio/*
+!data/chapitre-2/data_rio/data_crime.xlsx
+!data/chapitre-2/data_rio/data_upp.xlsx
+!data/chapitre-2/processed/
+data/chapitre-2/processed/*
+
+# Résultats et figures régénérables.
+table/*
+!table/chapitre-1/
+table/chapitre-1/*
+!table/chapitre-2/
+table/chapitre-2/*
+
+figure/*
+!figure/chapitre-2/
+figure/chapitre-2/*
+
+# Conserver l'arborescence des dossiers générés malgré les règles ci-dessus.
+!**/.gitkeep
