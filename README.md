@@ -119,7 +119,7 @@ d'un design DiD propre.
 
 `data/chapitre-2/data_rio/{data_crime,data_upp}.xlsx` sont les données réelles fournies avec l'exercice
 (criminalité mensuelle par UPP, dates de pacification) — **versionnées telles quelles** : elles sont
-déjà publiques dans le projet [`Interactive-Map-Rio-UPP`](../Interactive-Map-Rio-UPP) et largement sous
+déjà publiques dans le projet [Interactive-Map-Rio-UPP](https://github.com/Marius-cld/Interactive-Map-Rio-UPP) et largement sous
 la limite de taille de GitHub.
 
 Le script agrège les infractions en catégories mortelles/non mortelles, les rapporte à la population,
