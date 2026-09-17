@@ -22,7 +22,9 @@ Difference-in-Differences (panel, étude d'événement).
 │       ├── panel-{1,2,3}.csv             # généré, non versionné
 │       ├── data_rio/                     # données réelles UPP de Rio, versionnées (voir plus bas)
 │       └── processed/                    # snapshots intermédiaires, non versionné
-├── figures/chapitre-2/                   # graphiques générés — non versionné
+├── figures/
+│   ├── chapitre-1/                       # aucun graphique généré actuellement
+│   └── chapitre-2/                       # graphiques générés — non versionné
 ├── tables/
 │   ├── chapitre-1/                       # résultats OLS, ATE/ATT, biais — non versionné
 │   └── chapitre-2/                       # résultats TWFE/DiD/event-study — non versionné

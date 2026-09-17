@@ -30,6 +30,8 @@ tables/chapitre-1/*
 tables/chapitre-2/*
 
 figures/*
+!figures/chapitre-1/
+figures/chapitre-1/*
 !figures/chapitre-2/
 figures/chapitre-2/*
 
