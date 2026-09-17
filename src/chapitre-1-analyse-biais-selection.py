@@ -22,7 +22,7 @@ import statsmodels.api as sm
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data" / "chapitre-1"
-TABLE_DIR = ROOT_DIR / "table" / "chapitre-1"
+TABLE_DIR = ROOT_DIR / "tables" / "chapitre-1"
 
 DATASETS = ("data0", "data1", "data2")
 

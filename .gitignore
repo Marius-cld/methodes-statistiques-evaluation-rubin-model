@@ -23,15 +23,15 @@ data/chapitre-2/data_rio/*
 data/chapitre-2/processed/*
 
 # Résultats et figures régénérables.
-table/*
-!table/chapitre-1/
-table/chapitre-1/*
-!table/chapitre-2/
-table/chapitre-2/*
+tables/*
+!tables/chapitre-1/
+tables/chapitre-1/*
+!tables/chapitre-2/
+tables/chapitre-2/*
 
-figure/*
-!figure/chapitre-2/
-figure/chapitre-2/*
+figures/*
+!figures/chapitre-2/
+figures/chapitre-2/*
 
 # Conserver l'arborescence des dossiers générés malgré les règles ci-dessus.
 !**/.gitkeep

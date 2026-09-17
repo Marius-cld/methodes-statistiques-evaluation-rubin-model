@@ -25,8 +25,8 @@ from linearmodels.panel import PanelOLS
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data" / "chapitre-2"
-FIGURE_DIR = ROOT_DIR / "figure" / "chapitre-2"
-TABLE_DIR = ROOT_DIR / "table" / "chapitre-2"
+FIGURE_DIR = ROOT_DIR / "figures" / "chapitre-2"
+TABLE_DIR = ROOT_DIR / "tables" / "chapitre-2"
 
 PANELS = ("panel-1", "panel-2", "panel-3")
 TRAITEMENT_PERIODE = 71  # novembre 2012, cf. chapitre-2-generate-data.py

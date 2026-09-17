@@ -8,7 +8,7 @@ Difference-in-Differences (panel, étude d'événement).
 
 ```
 .
-├── notebook/
+├── notebooks/
 │   ├── chapitre-1-analyse-biais-selection.ipynb
 │   └── chapitre-2-diff-in-diff.ipynb
 ├── src/
@@ -22,8 +22,8 @@ Difference-in-Differences (panel, étude d'événement).
 │       ├── panel-{1,2,3}.csv             # généré, non versionné
 │       ├── data_rio/                     # données réelles UPP de Rio, versionnées (voir plus bas)
 │       └── processed/                    # snapshots intermédiaires, non versionné
-├── figure/chapitre-2/                    # graphiques générés — non versionné
-├── table/
+├── figures/chapitre-2/                   # graphiques générés — non versionné
+├── tables/
 │   ├── chapitre-1/                       # résultats OLS, ATE/ATT, biais — non versionné
 │   └── chapitre-2/                       # résultats TWFE/DiD/event-study — non versionné
 ├── docs/
@@ -82,7 +82,7 @@ en ré-estimant les modèles avec et sans contrôle par X sur un sous-échantill
 ```bash
 pip install -r requirements.txt
 python src/chapitre-1-generate-data.py          # génère data/chapitre-1/data{0,1,2}.csv
-jupyter notebook notebook/chapitre-1-analyse-biais-selection.ipynb
+jupyter notebook notebooks/chapitre-1-analyse-biais-selection.ipynb
 # ou, de façon équivalente :
 python src/chapitre-1-analyse-biais-selection.py
 ```
@@ -131,7 +131,7 @@ détermine le statut de traitement (pré/post-pacification) et regroupe le résu
 ```bash
 pip install -r requirements.txt
 python src/chapitre-2-generate-data.py          # génère data/chapitre-2/panel-{1,2,3}.csv
-jupyter notebook notebook/chapitre-2-diff-in-diff.ipynb
+jupyter notebook notebooks/chapitre-2-diff-in-diff.ipynb
 # ou, de façon équivalente :
 python src/chapitre-2-diff-in-diff.py
 ```

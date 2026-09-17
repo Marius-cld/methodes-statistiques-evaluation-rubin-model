@@ -1,6 +1,6 @@
 """
 Génère trois jeux de données synthétiques reproduisant les trois scénarios
-étudiés dans le notebook (`notebook/chapitre-1-analyse-biais-selection.ipynb`) :
+étudiés dans le notebook (`notebooks/chapitre-1-analyse-biais-selection.ipynb`) :
 
 - data0 : assignation du traitement aléatoire  -> aucun biais
 - data1 : assignation du traitement corrélée à X -> biais de sélection
