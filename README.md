@@ -24,10 +24,10 @@ Difference-in-Differences (panel, étude d'événement).
 │       └── processed/                    # snapshots intermédiaires, non versionné
 ├── figures/
 │   ├── chapitre-1/                       # aucun graphique généré actuellement
-│   └── chapitre-2/                       # graphiques générés — non versionné
+│   └── chapitre-2/                       # graphiques générés, non versionné
 ├── tables/
-│   ├── chapitre-1/                       # résultats OLS, ATE/ATT, biais — non versionné
-│   └── chapitre-2/                       # résultats TWFE/DiD/event-study — non versionné
+│   ├── chapitre-1/                       # résultats OLS, ATE/ATT, biais, non versionné
+│   └── chapitre-2/                       # résultats TWFE/DiD/event-study, non versionné
 ├── docs/
 │   ├── chapitre-1-enonce.pdf
 │   └── chapitre-2-enonce.pdf
@@ -110,17 +110,17 @@ Pour chaque jeu :
 2. **Estimateur à effets fixes doubles (TWFE)** : `linearmodels.PanelOLS`, effets entité + temps, erreurs
    standard clusterisées par entité.
 3. **DiD et étude d'événement** : `pyfixest`, régression sur l'interaction traitement × post-période, puis
-   un coefficient par période relative à la rupture (fenêtre de ±24 périodes — l'ensemble des 120 périodes
+   un coefficient par période relative à la rupture (fenêtre de ±24 périodes, l'ensemble des 120 périodes
    rendrait le graphique illisible).
 
 Les trois estimateurs TWFE retrouvent l'effet simulé à moins de 0,5 % près (ex. 5,98 estimé pour un effet
-simulé de 6,0), et l'étude d'événement ne montre aucune tendance pré-traitement significative — signe
+simulé de 6,0), et l'étude d'événement ne montre aucune tendance pré-traitement significative, signe
 d'un design DiD propre.
 
 ### Exercice 2 — Agrégation criminalité / UPP (Rio de Janeiro)
 
 `data/chapitre-2/data_rio/{data_crime,data_upp}.xlsx` sont les données réelles fournies avec l'exercice
-(criminalité mensuelle par UPP, dates de pacification) — **versionnées telles quelles** : elles sont
+(criminalité mensuelle par UPP, dates de pacification), **versionnées telles quelles** : elles sont
 déjà publiques dans le projet [Interactive-Map-Rio-UPP](https://github.com/Marius-cld/Interactive-Map-Rio-UPP) et largement sous
 la limite de taille de GitHub.
 
